@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --font-family: 'Manrope', sans-serif;
+
+  --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+  
+  --color-bg: #040C18;
+  --color-footer : #031B34;
+  --color-blog: #042c54;
+  --color-text: #81AFDD;
+  --color-subtext: #FF8A71;
+}
+p{
+  font-size: 1.6rem;
+}
+h1{
+  font-size: 6rem;
+}
+.app{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background:linear-gradient(340deg, rgb(137, 142, 241),rgb(8, 78, 209)) ;
+  color: white;
+}
+.app.warm{
+  color: rgb(15, 2, 2);
+
+  background:linear-gradient(340deg, rgb(228 243 172),rgb(224 247 9)) ;
+}
+.app::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  z-index: -1;
+  
+}
+.container{
+  max-width: 700px;
+  height: 700px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.timkiem{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+.nuttim{
+  position: relative;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  top: 5px;
+  user-select: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.app input{
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  background: rgba(255,255, 255, 0.1);
+  color: #82a6cd;
+  border: 1px solid rgba(255,255, 255, 0.8);
+}
+
+::placeholder{
+  color: rgb(8, 1, 1);
+}
+.app.top{
+  width: 100%;
+  margin: 1rem auto;
+}
+.cloud{
+  position: absolute;
+  height: 600px;
+  width: 100%;
+}
+.bottom{
+  position: absolute;
+  bottom: 35%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(255,255, 255, 0.2);
+}
+.bold{
+  font-weight: 700;
+}
